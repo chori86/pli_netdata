@@ -77,7 +77,8 @@ FUNC_SETUP_NETDATA(){
 
 
 
-    sudo curl https://my-netdata.io/kickstart.sh > /tmp/netdata-kickstart.sh && sh /tmp/netdata-kickstart.sh  --stable-channel --disable-telemetry --non-interactive \
+    #sudo curl https://my-netdata.io/kickstart.sh > /tmp/netdata-kickstart.sh && sh /tmp/netdata-kickstart.sh  --stable-channel --disable-telemetry --non-interactive \
+    sudo curl https://get.netdata.cloud/kickstart.sh > /tmp/netdata-kickstart.sh && sh /tmp/netdata-kickstart.sh --stable-channel --disable-telemetry --non-interactive \
     --claim-token $_INPUT \
     --claim-url https://app.netdata.cloud
 
