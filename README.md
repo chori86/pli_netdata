@@ -104,7 +104,7 @@ Assuming you have made no customisations since installing NetData, then by simpl
 4. The script then copies over the following alert configuration files to the 'health.d' folder where netdata reads conf file in order to produce the email notifications when the processes are not running.
 
     - pli-node.conf
-    #- pli-ei.conf
+  
 
 
 ---
