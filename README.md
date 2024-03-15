@@ -43,7 +43,7 @@ The following steps will now setup your VPS to report data into your Netdata 'Ge
 
 ```
     cd $HOME
-    git clone https://github.com/inv4fee2020/pli_netdata.git
+    git clone https://github.com/chori86/pli_netdata.git
     cd pli_netdata
     chmod +x *.sh
     echo
