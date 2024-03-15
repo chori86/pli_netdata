@@ -99,14 +99,15 @@ Assuming you have made no customisations since installing NetData, then by simpl
 
 2. The script updates the 'apps_groups.conf' file to implement the config to define the plugin processes. It does this by adding the following lines under the '# other application servers' section;
 
-        pli-node: *2_nodeStartPM2* *startNode*
-        pli-ei: external-initiator *3_initiatorStartPM2* *startEI*
+        #pli-node: *2_nodeStartPM2* *startNode*
+        pli-node: *NodeStartPM2*
+        #pli-ei: external-initiator *3_initiatorStartPM2* *startEI*
 
 
-3. The script then copies over the following alert configuration files to the 'health.d' folder where netdata reads conf file in order to produce the email notifications when the processes are not running.
+4. The script then copies over the following alert configuration files to the 'health.d' folder where netdata reads conf file in order to produce the email notifications when the processes are not running.
 
     - pli-node.conf
-    - pli-ei.conf
+    #- pli-ei.conf
 
 
 ---
