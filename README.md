@@ -1,4 +1,4 @@
-# Plugin Node - Proactive Monitoring with Netdata
+# Plugin NodeV2 - Proactive Monitoring with Netdata
 Plugin node proactive monitoring with Netdata
 
 A brief guide on how to install and configure Netdata to your @GoPlugin node for proactive monitoring & alerting.
