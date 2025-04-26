@@ -92,7 +92,8 @@ FUNC_SETUP_NETDATA(){
     #sudo sed -i.bak '/^freeswitch*/a \\npli-node: *2_nodeStartPM2* *startNode*\npli-ei: external-initiator* *3_initiatorStartPM2* *startEI*' $NDATA_APPS_FILE
     #sudo sed -i.bak '/^freeswitch*/a \\npli-node: *PM2 v5.3.0: God*' $NDATA_APPS_FILE
     #sudo sed -i.bak '/^freeswitch*/a \\npli-node: *NodeStartPM2*' $NDATA_APPS_FILE
-    sed -i.bak -e "\$a \\npli-node: *node*" $NDATA_APPS_FILE
+    #sed -i.bak -e "\$a \\npli-node: *node*" $NDATA_APPS_FILE
+    sed -i.bak -e "/## Processes of interest/a \\npli-node: *node*" $NDATA_APPS_FILE
     sudo systemctl unmask netdata.service
     sudo systemctl restart netdata
 
